@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root "statics#homepage"
+  get 'statics/homepage'
+
   get 'users/index'
 
   get 'users/show'
