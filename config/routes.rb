@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   root "statics#homepage"
   get 'statics/homepage'
 
-  get 'users/index'
+  get 'users', to: "users#index"
 
-  get 'users/show'
+  get 'users/:id', to: "users#show"
 
   resources :quotes
   # The priority is based upon order of creation: first created -> highest priority.
