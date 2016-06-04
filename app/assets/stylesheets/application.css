@@ -1,5 +1,10 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
+body{
+
+  background:lightblue;
+  /*background image: url(http://i.imgur.com/"dc79ymv.png");*/
+
+}
+ /** This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
@@ -11,5 +16,5 @@
  * file per style scope.
  *
  *= require_tree .
- *= require_self
- */
+/* *= require_self**//
+ 
