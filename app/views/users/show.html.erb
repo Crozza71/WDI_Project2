@@ -1,2 +1,16 @@
-<h1>Users#show</h1>
-<p>show me</p>
+<%= profile_picture @user.profile_picture %>
+<h1><%= @user.username %></h1>
+
+
+
+
+<ul>
+  <li>
+    <% @user.profile_picture.each do |profile_picture| %>
+    <ul class='tile'>
+        <li><%= profile_picture.title %></li>
+        <li><%= profile_picture.url %></li>
+      </ul>
+      <% end %>
+      </li>
+    </ul>
