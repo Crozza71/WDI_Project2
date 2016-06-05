@@ -1,6 +1,11 @@
 body{
 
-  background:lightblue;
+  background-image: url(http://i.imgur.com/dc79ymv.png); 
+   background-size: cover;
+   background-repeat: no-repeat;
+   float: right;
+
+  /*background:lightblue;*/
   /*background image: url(http://i.imgur.com/"dc79ymv.png");*/
 
 }
