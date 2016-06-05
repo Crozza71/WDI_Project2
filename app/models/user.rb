@@ -4,5 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+has_many :created , :class_name => "Quote"
 has_many :quotes
+has_and_belongs_to_many :liked_quotes, :class_name => "Quote"
+
 end

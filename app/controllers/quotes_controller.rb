@@ -1,6 +1,31 @@
 class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
 
+  
+  def like
+
+    quote = Quote.find(params[:id])
+
+    current_user.liked_quotes.push(quote)
+
+
+    redirect_to quotes
+
+  end
+
+
+  def unlike
+
+    quote = Quote.find(params[:id])
+
+        current_user.liked_quotes.destroy(quote)
+
+
+        redirect_to quotes
+
+
+  end
+
   # GET /quotes
   # GET /quotes.json
   def index

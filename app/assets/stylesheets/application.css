@@ -1,14 +1,18 @@
 body{
 
-  background-image: url(http://i.imgur.com/dc79ymv.png); 
+  /*background-image: url(http://i.imgur.com/JhBnQpR.jpg); 
    background-size: cover;
    background-repeat: no-repeat;
-   float: right;
+ */
 
   /*background:lightblue;*/
   /*background image: url(http://i.imgur.com/"dc79ymv.png");*/
 
 }
+
+label { 
+  display: block; width: 400px; 
+  }
  /** This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
