@@ -1,5 +1,12 @@
-<h1> "who are you" </h1>
-<h1><%= @current_user.username %></h1>
+
+<h2>All users</h2>
+
+<% @quotes.each do |quote| %>
+  
+    <%= quote.body %>
+
+    <% end %>
+
 
 
 
