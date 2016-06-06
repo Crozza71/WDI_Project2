@@ -47,7 +47,7 @@ class QuotesController < ApplicationController
   # GET /quotes/1.json
   def show
 
-    @image = Image.all
+    @quotes = Quote.all
   end
 
   # GET /quotes/new
@@ -58,6 +58,7 @@ class QuotesController < ApplicationController
 
   # GET /quotes/1/edit
   def edit
+    @culprits = User.all
   end
 
   # POST /quotes
@@ -109,6 +110,6 @@ class QuotesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def quote_params
-      params.require(:quote).permit(:body, :culprit, :date, :image)
+      params.require(:quote).permit(:body, :culprit_id, :date, :image)
     end
 end
