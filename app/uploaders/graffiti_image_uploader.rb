@@ -32,7 +32,7 @@ class GraffitiImageUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files:
-  version :thumb do
+  version :thumbnail do
     process :resize_to_fill => [50, 50]
   end
 

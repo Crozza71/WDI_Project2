@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require Materialize/bin/materialize.js
 //= require_tree .

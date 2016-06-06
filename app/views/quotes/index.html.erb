@@ -15,10 +15,12 @@
   <tbody>
     <% @quotes.each do |quote| %>
       <tr>
-        <td><%= quote.body %></td>
-        <td><%= quote.culprit %></td>
+        <td> <%= quote.body %></td>
+        <td><a href="<%= query_path(quote.culprit) %>"><%= quote.culprit %></a> </td>
         <td><%= quote.date %></td>
-        
+        <td><%= quote.image %></td>
+        <td><%= image_tag quote.image.thumbnail.url %></td>
+
         <td><%= link_to 'Show', quote %></td>
         <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
         <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -30,3 +32,4 @@
 <br>
 
 <%= link_to 'New Quote', new_quote_path %>
+

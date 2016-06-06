@@ -2,49 +2,40 @@
 <html>
 <head>
   <title>QuoteBook</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
 
 </head>
 <body>
+  <nav>
+    <ul>
+     <% if current_user %>
+     <li><a href="/users/<%= current_user.id %>"><%= image_tag current_user.profile_picture %></a></li>
+     <li><%= link_to "Edit Profile" , edit_user_registration_path %></li>
+     <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+     <li><%= link_to " All quotes" , quotes_path %></li>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+     <li><%= link_to "Add a quote" , new_quote_path %></li>
+     <% else %>
+     <li><%= link_to "Sign in" , user_session_path %></li>
+     <li><%= link_to "Register", new_user_registration_path %></li>
 
-   <nav>
-    <div class="container">
-      <h2>Quote Book Baby!</h2>
-      
-      <ul class="nav nav-pills" role="tablist">
-        <li class="active"><%= link_to "Home", root_path %></li>
-        <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
-                <% if current_user %>
-                  <li><a href="/user/<%= current_user.id %>"> <%= current_user.username %> </a> 
-                  </li>
-                  <li><%= current_user.email %></li>
-                  <li><%= link_to "Edit Profile" , edit_user_registration_path %></li>
-                  <li><%= link_to " All quotes" , quotes_path %></li>
+     <% end %>
+   </ul>
+ </nav>
 
-                  <li><%= link_to "Add a quote" , new_quote_path %></li>
-                  <li><%= link_to "Images", images_path %></li>
-                  <li><%= link_to "Add an Image", new_image_path %></li>
 
-                <% else %>
-                  <li><%= link_to "Sign in" , user_session_path %></li>
-                  <li><%= link_to "Register", new_user_registration_path %></li>
+ <p class="notice"><%= notice %></p>
+ <p class="alert"><%= alert %></p>
 
-                <% end %>
-              </ul>
-            </nav>
-        
-    <main>
-      <%= yield %>
-    </main>
+ <main>
+  <%= yield %>
+</main>
 
 </body>
 </html>
