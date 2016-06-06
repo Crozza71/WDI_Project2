@@ -15,11 +15,13 @@
   <tbody>
     <% @quotes.each do |quote| %>
       <tr>
-        <td> <%= quote.body %></td>
-        <td><a href="<%= query_path(quote.culprit) %>"><%= quote.culprit %></a> </td>
+        <td><%= quote.body %></td>
+        <td><%= link_to quote.culprit.username , user_show_path(quote.culprit) %></td>
         <td><%= quote.date %></td>
         <td><%= quote.image %></td>
         <td><%= image_tag quote.image.thumbnail.url %></td>
+        <td><%= image_tag quote.culprit.profile_picture.thumbnail.url %></td>
+
 
         <td><%= link_to 'Show', quote %></td>
         <td><%= link_to 'Edit', edit_quote_path(quote) %></td>

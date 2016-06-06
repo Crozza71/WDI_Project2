@@ -15,6 +15,8 @@ class QuotesController < ApplicationController
 
     quote = Quote.find(params[:id])
 
+    quote.culprit
+
     current_user.liked_quotes.push(quote)
 
 
@@ -50,6 +52,7 @@ class QuotesController < ApplicationController
 
   # GET /quotes/new
   def new
+    @culprits = User.all
     @quote = Quote.new
   end
 

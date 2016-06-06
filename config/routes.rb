@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   get 'users', to: "users#index"
-  get 'users/:id', to: "users#show"
+  get 'users/:id', to: "users#show", as: "user_show"
 
   get "quotes/search/:term", to: "quotes#search", as: "query" 
 end

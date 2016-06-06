@@ -18,8 +18,8 @@
     
   </div>
   <div class="field">
-    <%= f.label :culprit %><br>
-    <%= f.text_field :culprit %>
+    <%= f.label :culprit_id %>
+    <%= f.select( :culprit_id, options_from_collection_for_select(@culprits , :id , :username)) %>
   </div>
   <div class="field">
     <%= f.label :date %><br>
@@ -30,6 +30,8 @@
     <%= f.file_field :image %>
   </div>
 
+
+  
   <div class="actions">
     <%= f.submit %>
   </div>

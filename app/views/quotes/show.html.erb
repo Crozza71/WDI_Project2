@@ -15,10 +15,15 @@
   <%= @quote.date %>
 </p>
 
+<p>
 <strong>Image:</strong>
 <%= image_tag @quote.image.detail.url %>
+</p>
 
 <p>
+<strong>Culprit_Image:</strong>
+<%= image_tag @quote.culprit_image.detail.url %>
+</p>
 
 <%= link_to 'Edit', edit_quote_path(@quote) %> |
 <%= link_to 'Back', quotes_path %>
