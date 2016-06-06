@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   get 'users/:id', to: "users#show"
 
+  get "quotes/search/:term", to: "quotes#search"
+
   resources :quotes
   
 end

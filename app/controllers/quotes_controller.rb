@@ -1,6 +1,15 @@
 class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
 
+  def search
+
+    term = params[:term]
+
+    @quotes = Quote.where(culprit: term)
+
+    render :index
+
+  end
   
   def like
 

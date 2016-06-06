@@ -25,6 +25,9 @@
   </div>
 
   <div class="field">
+    <% if resource.profile_picture %>
+      <img src="<%= resource.profile_picture %>"/>
+    <% end %>
     <%= f.label :profile_picture %><br />
     <%= f.text_field :profile_picture %>
   </div>
