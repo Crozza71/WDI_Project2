@@ -5,7 +5,7 @@ body{
    background-repeat: no-repeat;
  */
 
-  /*background:lightblue;*/
+  background:lightblue;
   /*background image: url(http://i.imgur.com/"dc79ymv.png");*/
 
 }
@@ -13,6 +13,14 @@ body{
 label { 
   display: block; width: 400px; 
   }
+
+
+
+  .describe {
+                width: 1000px;
+
+              }
+  
  /** This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
