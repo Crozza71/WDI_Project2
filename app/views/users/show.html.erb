@@ -11,5 +11,7 @@
       <li><%= image_tag quote.image, width: 80, height: 80%></li>
     <% end %>
     <li> <%= quote.body %></li>
+    <li><%= link_to "edit", edit_quote_path(quote) %></li>
+    <li><%= link_to "delete", quote_path(quote), method: "delete" %></li>
   </div>
 <% end %>
