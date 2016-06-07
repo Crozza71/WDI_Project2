@@ -58,7 +58,12 @@ class QuotesController < ApplicationController
   # POST /quotes
   # POST /quotes.json
   def create
-    @quote = current_user.quotes.new(quote_params)
+    @quote = Quote.new(quote_params)
+    @culprit = User.find(@quote.culprit_id)
+    @quote.culprit_image = @culprit.profile_picture
+
+    puts "ILUHAIUHDLIYAGDLYAGLUDGGA #{@culprit.profile_picture} IUIAHFIUHWIDWIGLI"
+    puts "IUHIGOYGKUFKYFKYFOYGPOIHI #{@quote.culprit_image} IGBOUGOUYGAOYGDIUAHIUDHIUHIUHAIU"
 
     respond_to do |format|
       if @quote.save
