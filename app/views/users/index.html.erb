@@ -9,6 +9,7 @@
     <li>
 
     <a href="/users/<%= user.id %>"> <%= user.email %> </a>
+    <%= image_tag user.profile_picture.thumbnail.url %>
     </li>
   <% end %>
 </ul>

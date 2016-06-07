@@ -33,11 +33,11 @@ class GraffitiImageUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
   version :thumbnail do
-    process :resize_to_fill => [40, 40]
+    process :resize_to_fill => [80, 80]
   end
 
   version :detail do
-    process :resize_to_fill => [50, 50]
+    process :resize_to_fit => [80, 80]
   end
 
   # Add a white list of extensions which are allowed to be uploaded.

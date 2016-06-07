@@ -2,15 +2,66 @@
 
 body {
 
-    background-image: url(images/Untitled-design.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 1;
-
-  // background:lightblue;
-  /*background image: url(http://i.imgur.com/"dc79ymv.png");*/
+    background: #4E87B2;
+    color: #3F3C42;
+    text-align: center;
+    margin: 0 auto;
 }
+
+a {
+  color:#FFFFFF;
+
+
+}
+
+a:hover {
+  
+}
+
+.homepage{
+  font-family: 'Oswald', sans-serif;
+  h1{
+    font-size: 120px;
+    font-weight: 700;
+      }
+    h2{
+      font-size: 80px;
+      font-weight: 400;
+        }
+      h3{
+        font-size: 50px;
+        font-weight: 300;
+      }
+
+
+  }
+
+
+
 
 label { 
   display: block; width: 400px; 
 }
+.profilebackground {
+
+  border:2px solid black;
+  height:400px;
+  width:40%; 
+  margin: 0 auto;
+
+ }
+
+ .quotetext {
+
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+
+ }
+
+ .sizing{
+
+  height: 150px;
+  width: 150px;
+
+ }
