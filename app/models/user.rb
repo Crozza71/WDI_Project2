@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+         
 mount_uploader :profile_picture, GraffitiImageUploader
 has_many :created , :class_name => "Quote"
 has_many :quotes

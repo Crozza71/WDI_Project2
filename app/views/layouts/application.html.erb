@@ -9,34 +9,29 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-
 </head>
 <body>
-  <nav>
-    <ul>
-     <% if current_user %>
-     <li><a href="/users/<%= current_user.id %>"><%= image_tag current_user.profile_picture.thumbnail.url %></a></li>
-     <li><%= link_to "Edit Profile" , edit_user_registration_path %></li>
-     <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
-     <li><%= link_to " All quotes" , quotes_path %></li>
-     <li><%= link_to " All users" , users_path %></li>
+  <nav class="navbar navbar-dark bg-primary">
+    <ul class="nav navbar-nav">
+      <% if current_user %>
+        <li><a href="/users/<%= current_user.id %>"><%= image_tag current_user.profile_picture.thumbnail.url %></a></li>
+        <li class="nav-item"><%= link_to "Edit Profile" , edit_user_registration_path %></li>
+        <li class="nav-item"><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+        <li class="nav-item"><%= link_to " All quotes" , quotes_path %></li>
+        <li class="nav-item"><%= link_to " All users" , users_path %></li>
+        <li class="nav-item"><%= link_to "Add a quote" , new_quote_path %></li>
+      <% else %>
+        <li class="nav-item"><%= link_to "Sign in" , user_session_path %></li>
+        <li class="nav-item"><%= link_to "Register", new_user_registration_path %></li>
+      <% end %>
+    </ul>
+  </nav> 
 
-     <li><%= link_to "Add a quote" , new_quote_path %></li>
-     <% else %>
-     <li><%= link_to "Sign in" , user_session_path %></li>
-     <li><%= link_to "Register", new_user_registration_path %></li>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
-     <% end %>
-   </ul>
- </nav>
-
-
- <p class="notice"><%= notice %></p>
- <p class="alert"><%= alert %></p>
-
- <main>
-  <%= yield %>
-</main>
-
+  <main>
+    <%= yield %>
+  </main>
 </body>
 </html>

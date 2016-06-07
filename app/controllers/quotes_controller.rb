@@ -26,15 +26,9 @@ class QuotesController < ApplicationController
 
 
   def unlike
-
     quote = Quote.find(params[:id])
-
-        current_user.liked_quotes.destroy(quote)
-
-
-        redirect_to quotes
-
-
+    current_user.liked_quotes.destroy(quote)
+    redirect_to quotes
   end
 
   # GET /quotes
@@ -64,8 +58,7 @@ class QuotesController < ApplicationController
   # POST /quotes
   # POST /quotes.json
   def create
-    @quote = Quote.new(quote_params)
-    @quote.user = current_user
+    @quote = current_user.quotes.new(quote_params)
 
     respond_to do |format|
       if @quote.save
