@@ -2,10 +2,10 @@
 
 body {
 
-    background: #4E87B2;
-    color: #3F3C42;
-    text-align: center;
-    margin: 0 auto;
+  background: #4E87B2;
+  color: #3F3C42;
+  text-align: center;
+  margin: 0 auto;
 }
 
 a {
@@ -15,7 +15,39 @@ a {
 }
 
 a:hover {
-  
+
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.quotes{
+  .card{
+        margin:10px;
+        img {
+              width:80px;
+              height:80px;
+              border-radius: 100%;
+              position: relative;
+              left: 150px;
+
+            }
+            p{
+              background:#fff;
+              padding:15px 5px;
+              width:500px;
+              border-radius: 5px;
+              position: relative;
+              left: 195px;
+              top: 20px;
+              z-index:1;
+            }
+  }
+
 }
 
 .homepage{
@@ -23,25 +55,18 @@ a:hover {
   h1{
     font-size: 120px;
     font-weight: 700;
-      }
-    h2{
-      font-size: 80px;
-      font-weight: 400;
-        }
-      h3{
-        font-size: 50px;
-        font-weight: 300;
-      }
-
-
   }
-
-
-
-
-label { 
-  display: block; width: 400px; 
+  h2{
+    font-size: 80px;
+    font-weight: 400;
+  }
+  h3{
+    font-size: 50px;
+    font-weight: 300;
+  }
 }
+
+
 .profilebackground {
 
   border:2px solid black;
@@ -49,19 +74,19 @@ label {
   width:40%; 
   margin: 0 auto;
 
- }
+}
 
- .quotetext {
+.quotetext {
 
   color: white;
   padding-top: 30px;
   text-align: center;
 
- }
+}
 
- .sizing{
+.sizing{
 
   height: 150px;
   width: 150px;
 
- }
+}
