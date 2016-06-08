@@ -5,7 +5,7 @@ body {
   background: #4E87B2;
   color: #3F3C42;
   text-align: center;
-  margin: 0 auto;
+  margin: 0px 5px 10px 10px;
 }
 
 a {
@@ -23,6 +23,27 @@ ul{
   padding: 0;
   list-style-type: none;
 
+}
+
+.quote-of-the-day {
+  img {
+        width:80px;
+        height:80px;
+        border-radius: 100%;
+        position: relative;
+        left: 150px;
+
+      }
+      p{
+        background:#fff;
+        padding:15px 5px;
+        width:500px;
+        border-radius: 5px;
+        position: relative;
+        left: 195px;
+        top: 20px;
+        z-index:1;
+      }
 }
 
 .quotes{
@@ -68,6 +89,9 @@ ul{
 
 .users{
     padding: 10px auto;
+    text-align: center;
+    position: relative; 
+    left: 425px;
 
 
 }

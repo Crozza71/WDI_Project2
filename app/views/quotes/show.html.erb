@@ -20,6 +20,14 @@
 <%= image_tag @quote.image.detail.url %>
 </p>
 
+<p>
+  <strong>Likes:</strong>
+  <%= @quote.liked_by.length %>
+</p>
+
+
+
+
 
 <%= link_to 'Edit', edit_quote_path(@quote) %> |
 <%= link_to 'Back', quotes_path %>

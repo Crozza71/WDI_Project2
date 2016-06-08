@@ -1,6 +1,28 @@
 class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
 
+  def like
+
+    quotes = Quote.find(params[:id])
+
+    current_user.liked_quotes.push(quotes)
+
+
+    redirect_to quotes_path
+
+  end
+
+
+  def unlike
+
+    quotes = Quote.find(params[:id])
+
+    current_user.liked_quotes.destroy(quotes)
+
+
+    redirect_to quotes_path
+
+  end
   def search
 
     term = params[:term]
@@ -11,26 +33,7 @@ class QuotesController < ApplicationController
 
   end
   
-  def like
-
-    quote = Quote.find(params[:id])
-
-    quote.culprit
-
-    current_user.liked_quotes.push(quote)
-
-
-    redirect_to quotes
-
-  end
-
-
-  def unlike
-    quote = Quote.find(params[:id])
-    current_user.liked_quotes.destroy(quote)
-    redirect_to quotes
-  end
-
+  
   # GET /quotes
   # GET /quotes.json
   def index
@@ -62,8 +65,7 @@ class QuotesController < ApplicationController
     @culprit = User.find(@quote.culprit_id)
     @quote.culprit_image = @culprit.profile_picture
 
-    puts "ILUHAIUHDLIYAGDLYAGLUDGGA #{@culprit.profile_picture} IUIAHFIUHWIDWIGLI"
-    puts "IUHIGOYGKUFKYFKYFOYGPOIHI #{@quote.culprit_image} IGBOUGOUYGAOYGDIUAHIUDHIUHIUHAIU"
+    
 
     respond_to do |format|
       if @quote.save
@@ -99,6 +101,18 @@ class QuotesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def upvote
+
+    @quote.upvote_from current_user
+    redirect_to quotes_path
+  end
+
+  def downvote
+
+    @quote.downvote_from current_user
+    redirect_to quotes_path
+  end 
 
   private
     # Use callbacks to share common setup or constraints between actions.
