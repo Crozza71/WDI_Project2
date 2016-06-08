@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div 
 <div class="quotes">
   <h1>Listing Quotes</h1>
 
@@ -7,13 +7,19 @@
     <li>
       <% @quotes.each do |quote| %>
         <ul class="card">
-          <li><p><%= quote.body %></p></li>
-          <li><%= link_to (image_tag quote.culprit.profile_picture.url),user_show_path(quote.culprit) %></li>
-          <% unless quote.liked_by.exists?(current_user) %>
-          <li><%= link_to 'Like', like_quotes_path(quote), class: "glyphicon glyphicon-thumbs-up" %></li>
-          <% else %>
-          <li><%= link_to 'unLike', unlike_quotes_path(quote), class: "glyphicon glyphicon-thumbs-down" %></li>
-          <% end %>
+          <div class="text">
+            <div class="speech-bubble">
+              <li><p><%= quote.body %></p></li>
+              <% unless quote.liked_by.exists?(current_user) %>
+                <li class="like"><%= link_to '', like_quotes_path(quote), class: "glyphicon glyphicon-thumbs-up" %></li>
+              <% else %>
+                <li class="like"><%= link_to '', unlike_quotes_path(quote), class: "glyphicon glyphicon-thumbs-down" %></li>
+              <% end %>
+            </div>
+            <div class="arrow-down"></div>
+            <li><%= link_to (image_tag quote.culprit.profile_picture.url),user_show_path(quote.culprit) %></li>
+
+          </div>
         </ul>
       <% end %>    
     </li>

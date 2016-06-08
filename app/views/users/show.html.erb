@@ -8,7 +8,7 @@
 <% @quotes.each do |quote| %>
   <div class="quotetext">
     <% if quote.image %>
-      <li><%= image_tag quote.image, width: 80, height: 80%></li>
+      <li><%= image_tag quote.image, width: 60, height: 60%></li>
     <% end %>
     <li> <%= quote.body %></li>
     <li><%= link_to "edit", edit_quote_path(quote) %></li>

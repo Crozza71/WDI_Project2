@@ -43,30 +43,30 @@ ul
       }
 }
 
-.quotes{
-  .card{
-        margin:10px;
-        img {
-              width:80px;
-              height:80px;
-              border-radius: 100%;
-              position: relative;
-              left: 150px;
+// .quotes{
+//   .card{
+//         margin:10px;
+//         img {
+//               width:80px;
+//               height:80px;
+//               border-radius: 100%;
+//               position: relative;
+//               left: 150px;
 
-            }
-            p{
-              background:#fff;
-              padding:15px 5px;
-              width:500px;
-              border-radius: 5px;
-              position: relative;
-              left: 195px;
-              top: 20px;
-              z-index:1;
-            }
-  }
+//             }
+//             p{
+//               background:#fff;
+//               padding:15px 5px;
+//               width:500px;
+//               border-radius: 5px;
+//               position: relative;
+//               left: 195px;
+//               top: 20px;
+//               z-index:1;
+//             }
+//   }
 
-}
+// }
 
 .homepage{
   font-family: 'Oswald', sans-serif;
@@ -122,15 +122,12 @@ ul
 }
 
 .glyphicon {
-    position: relative;
-    top: -60px;
-    left: 75px;
+    color: #333;
     display: inline-block;
     font-family: 'Glyphicons Halflings';
     font-style: normal;
     font-weight: 500;
-
-    }
+  }
 
   .profile_pic{
     width:60px;
@@ -146,3 +143,78 @@ ul
           width: 400px;
           border-radius: 100%;
     }
+
+.field{
+
+
+  .describe{
+      
+        background-color: red;
+
+      }
+      
+}    
+
+
+input[type="file"] {
+    margin: 0 auto;
+}
+
+
+.card {
+  margin: 20px auto;
+  width: 470px;
+  height: 150px;
+  position: relative;
+
+  .speech-bubble {
+    position: relative;
+    z-index: 1;
+    background: #FFF;
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+
+    p {
+      text-align: left;
+      width: 300px;
+    }
+  }
+
+  img {
+    position: absolute;
+    left: 375px;
+    bottom: -50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+  }
+}
+
+.text {
+  position: relative;
+}
+
+.arrow-down {
+ position: absolute;
+ z-index: 1;
+ bottom: -15px;
+ left: 378px;
+ width: 0; 
+ height: 0; 
+ border-left: 15px solid transparent;
+ border-right: 0px solid transparent;
+ border-top: 15px solid #fff;
+}
+
+.like {
+  position: absolute;
+  width: 50px;
+  left: 340px;
+  bottom: 10px;
+  z-index: 2;
+}
+
+.tile {
+  margin: 5px;
+}
