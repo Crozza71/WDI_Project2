@@ -38,6 +38,8 @@ class QuotesController < ApplicationController
   # GET /quotes.json
   def index
     @quotes = Quote.all
+
+       @quotes = Quote.order('culprit_id DESC').reorder('date DESC')
   end
 
   # GET /quotes/1

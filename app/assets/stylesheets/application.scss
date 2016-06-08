@@ -1,37 +1,34 @@
 /* @import 'Materialize/bin/materialize.css'; */
 
-body {
+body 
+      {
 
   background: #4E87B2;
   color: #3F3C42;
   text-align: center;
   margin: 0px 5px 10px 10px;
-}
+      }
 
-a {
+a     
+      {
   color:#FFFFFF;
+      }     
 
-
-}
-
-a:hover {
-
-}
-
-ul{
+ul     
+     {
   margin: 0;
   padding: 0;
   list-style-type: none;
+     }
 
-}
-
-.quote-of-the-day {
+.quote-of-the-day 
+      {
   img {
         width:80px;
         height:80px;
         border-radius: 100%;
         position: relative;
-        left: 150px;
+        left: 265px;
 
       }
       p{
@@ -40,7 +37,7 @@ ul{
         width:500px;
         border-radius: 5px;
         position: relative;
-        left: 195px;
+        left: 285px;
         top: 20px;
         z-index:1;
       }
@@ -74,21 +71,21 @@ ul{
 .homepage{
   font-family: 'Oswald', sans-serif;
   h1{
-    font-size: 120px;
+    font-size: 65px;
     font-weight: 700;
   }
   h2{
-    font-size: 80px;
+    font-size: 45px;
     font-weight: 400;
   }
   h3{
-    font-size: 50px;
+    font-size: 25px;
     font-weight: 300;
   }
 }
 
 .users{
-    padding: 10px auto;
+    padding: 5px auto;
     text-align: center;
     position: relative; 
     left: 425px;
@@ -118,3 +115,34 @@ ul{
   width: 150px;
 
 }
+
+.jumbotron{
+
+  padding: 0.5px 0.5px 0.5px 0.5px;
+}
+
+.glyphicon {
+    position: relative;
+    top: -60px;
+    left: 75px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 500;
+
+    }
+
+  .profile_pic{
+    width:60px;
+    height:60px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 100%;
+    }
+
+    .pro_block{
+
+          height:100px;
+          width: 400px;
+          border-radius: 100%;
+    }

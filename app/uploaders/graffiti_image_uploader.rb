@@ -37,7 +37,7 @@ class GraffitiImageUploader < CarrierWave::Uploader::Base
   end
 
   version :detail do
-    process :resize_to_fit => [80, 80]
+    process :resize_to_fit => [100, 100]
   end
 
   # Add a white list of extensions which are allowed to be uploaded.
