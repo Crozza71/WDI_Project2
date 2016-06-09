@@ -7,9 +7,11 @@
 
 <% @quotes.each do |quote| %>
   <div class="quotetext">
-    <% if quote.image %>
+    <% if quote.image.to_s != "" %>
       <li><%= image_tag quote.image, width: 60, height: 60%></li>
     <% end %>
+  
+
     <li> <%= quote.body %></li>
     <li><%= link_to "edit", edit_quote_path(quote) %></li>
     <li><%= link_to "delete", quote_path(quote), method: "delete" %></li>

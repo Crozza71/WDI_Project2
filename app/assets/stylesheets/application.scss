@@ -21,27 +21,6 @@ ul
   list-style-type: none;
      }
 
-.quote-of-the-day 
-      {
-  img {
-        width:80px;
-        height:80px;
-        border-radius: 100%;
-        position: relative;
-        left: 265px;
-
-      }
-      p{
-        background:#fff;
-        padding:15px 5px;
-        width:500px;
-        border-radius: 5px;
-        position: relative;
-        left: 285px;
-        top: 20px;
-        z-index:1;
-      }
-}
 
 // .quotes{
 //   .card{
@@ -217,4 +196,28 @@ input[type="file"] {
 
 .tile {
   margin: 5px;
+  border-image-width: 1px;
+  border-style: groove;
+}
+
+.quote-of-the-day 
+      {
+  img {
+        width:80px;
+        height:80px;
+        border-radius: 100%;
+        position: relative;
+        left: 260px;
+
+      }
+      p{
+        background:#fff;
+        padding:15px 5px;
+        width:500px;
+        border-radius: 5px;
+        position: relative;
+        left: 355px;
+        top: 20px;
+        z-index:1;
+      }
 }

@@ -12,8 +12,6 @@ Rails.application.routes.draw do
 
   get 'users', to: "users#index"
   get 'users/:id', to: "users#show", as: "user_show"
-  get 'users', to: 'users#about'
-
-  get "quotes/search/:term", to: "quotes#search", as: "query" 
+  
 end
 
