@@ -1,0 +1,196 @@
+/* @import 'Materialize/bin/materialize.css'; */
+/* line 4, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+body {
+  background: #4E87B2;
+  color: #3F3C42;
+  text-align: center;
+  margin: 0px 5px 10px 10px;
+}
+
+/* line 13, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+a {
+  color: #FFFFFF;
+}
+
+/* line 18, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 25, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.homepage {
+  font-family: 'Oswald', sans-serif;
+}
+/* line 27, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.homepage h1 {
+  font-size: 65px;
+  font-weight: 700;
+}
+/* line 31, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.homepage h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+/* line 35, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.homepage h3 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+/* line 41, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.users {
+  padding: 5px auto;
+  text-align: center;
+  position: relative;
+  left: 425px;
+}
+
+/* line 49, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.profilebackground {
+  border: 2px solid black;
+  height: 400px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+/* line 58, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.quotetext {
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* line 66, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.sizing {
+  height: 150px;
+  width: 150px;
+}
+
+/* line 73, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.jumbotron {
+  padding: 0.5px 0.5px 0.5px 0.5px;
+}
+
+/* line 78, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.glyphicon {
+  color: #333;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* line 86, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.profile_pic {
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+/* line 94, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.pro_block {
+  height: 100px;
+  width: 400px;
+  border-radius: 100%;
+}
+
+/* line 104, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.field .describe {
+  background-color: red;
+  width: 400px;
+  height: 400px;
+}
+
+/* line 115, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+input[type="file"] {
+  margin: 0 auto;
+}
+
+/* line 120, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.card {
+  margin: 20px auto;
+  width: 470px;
+  height: 150px;
+  position: relative;
+}
+/* line 126, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.card .speech-bubble {
+  position: relative;
+  z-index: 1;
+  background: #FFF;
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+}
+/* line 134, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.card .speech-bubble p {
+  text-align: left;
+  width: 300px;
+}
+/* line 140, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.card img {
+  position: absolute;
+  left: 375px;
+  bottom: -50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+/* line 150, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.text {
+  position: relative;
+}
+
+/* line 154, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.arrow-down {
+  position: absolute;
+  z-index: 1;
+  bottom: -15px;
+  left: 378px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 15px solid #fff;
+}
+
+/* line 166, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.like {
+  position: absolute;
+  width: 50px;
+  left: 340px;
+  bottom: 10px;
+  z-index: 2;
+}
+
+/* line 174, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.tile {
+  margin: 5px;
+  border-image-width: 1px;
+  border-style: groove;
+}
+
+/* line 182, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.quote-of-the-day img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  position: relative;
+  left: 260px;
+}
+/* line 190, /Users/paulcrosby/development/Quote_Book/app/assets/stylesheets/application.scss */
+.quote-of-the-day p {
+  background: #fff;
+  padding: 15px 5px;
+  width: 500px;
+  border-radius: 5px;
+  position: relative;
+  left: 355px;
+  top: 20px;
+  z-index: 1;
+}
