@@ -15,10 +15,11 @@
 <h5>Quote of the day</h5>
 
 
+<% if @rand_record %>
  <div class="quote-of-the-day">
-
    <p><%= @rand_record.body %></p>
    <%= image_tag @rand_record.culprit.profile_picture.url %>  
  </div>
+ <% end %>
   </div>
 
