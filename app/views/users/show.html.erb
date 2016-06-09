@@ -5,14 +5,22 @@
 
 <h5>Recent Quotes</h5>
 
-<% @quotes.each do |quote| %>
+
+<ul>
+  <li>
+    <% @quotes.each do |quote| %>
+      <ul class="card">
+        <div class="text">
+          <div class="speech-bubble">
+            <li><p><%= quote.body %></p></li>
+          </div>
+      </ul>  
+  </li>
+</ul>  
   <div class="quotetext">
     <% if quote.image.to_s != "" %>
       <li><%= image_tag quote.image, width: 60, height: 60%></li>
     <% end %>
-  
-
-    <li> <%= quote.body %></li>
     <li><%= link_to "edit", edit_quote_path(quote) %></li>
     <li><%= link_to "delete", quote_path(quote), method: "delete" %></li>
   </div>
