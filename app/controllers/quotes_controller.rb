@@ -23,15 +23,7 @@ class QuotesController < ApplicationController
     redirect_to quotes_path
 
   end
-  def search
-
-    term = params[:term]
-
-    @quotes = Quote.where(culprit: term)
-
-    render :index
-
-  end
+  
   
   
   # GET /quotes
@@ -47,6 +39,7 @@ class QuotesController < ApplicationController
   def show
 
     @quotes = Quote.all
+    
   end
 
   # GET /quotes/new
@@ -127,3 +120,4 @@ class QuotesController < ApplicationController
       params.require(:quote).permit(:body, :culprit_id, :date, :image)
     end
 end
+

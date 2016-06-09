@@ -4,7 +4,15 @@ class UsersController < ApplicationController
   end
 
   def show
-    @quotes = Quote.where(:culprit_id => params[:id])
+
     @user = User.find(params[:id])
+    @quotes = @user.quotes
+    if @user 
+      render 'show'
+    else
+      redirect_to root_path
+
+
+    end
   end
 end

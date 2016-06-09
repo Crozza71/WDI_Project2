@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
          
 mount_uploader :profile_picture, GraffitiImageUploader
 has_many :created , :class_name => "Quote"
-has_many :quotes
+has_many :quotes, foreign_key: "culprit_id"
 has_and_belongs_to_many :liked_quotes, :class_name => "Quote"
 
 end
