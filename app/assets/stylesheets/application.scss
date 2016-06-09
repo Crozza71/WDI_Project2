@@ -98,19 +98,17 @@ ul
 }
 
 .field{
+  height:70px;
 
-
-  .describe{
-
-    background-color: red;
-    width:400px;
-    height:400px;
-
+  textarea {
+    width: 65%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
   }
-
-}    
-
-
+  }
 input[type="file"] {
   margin: 0 auto;
 }
