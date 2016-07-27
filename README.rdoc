@@ -1,28 +1,47 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+The Quote Book. This was my second project at General Assembly.
+It all started just over 6 weeks ago!
+
+11 Nervous Students 
+
+![MacDown Screenshot](http://i.imgur.com/9uw4TcM.png)
+
+A lot said about Ducks , a lot seen of Cats and kittens , and then the comments started to flow 
+
+![MacDown Screenshot](http://i.imgur.com/7IfTKt2.png)
+
+So the idea was born.
+2 models, Bower, Ruby,Ruby, Ruby...
+
+![MacDown Screenshot](http://i.imgur.com/dtBLJAc.png)
+
+The architecture started and the Agile process was on fire
+
+![MacDown Screenshot](http://i.imgur.com/G6R38vL.png)
+
+But, was there enough time for everything?
+
+![MacDown Screenshot](http://i.imgur.com/fMnERy6.png)
+
+What was enjoyable about the Book?
+Other than the giggles that came from entering the quotes,
+1.The freedom to try and express myself in the app.
+2.Putting into practice things I had learnt but in the same vane trying to remember things and understand things I didn't the first time around.
+3.CSS and the styling.
+
+What was difficult and problematic?
+1.Building a dropdown menu for the new quote page.
+2.Carrierwave uploader and all the variations for images.
+3.Trying to use the Gem "act_as_votable", which in the end I never included.
+
+What would I change or add?
+1.I would like to get “act_as_votable” to work so that I could use Javascript to build Quotes of the week or a leaderboard on the homepage.
+2.I would like to have had a scrolling news feed with quotes rolling over a certain time period.
+3.I would have a form scroll down as part of an animation sequence as opposed to being static , and possibly the new quote page too. 
+
+So to the code......
+
+![MacDown Screenshot](http://i.imgur.com/Rlqlezp.png)
+
+I used Ruby on Rails and jQuery with a PostgresSQL.This also includes Devise for my Password Authentication and Gems in Carrierwave and rMagick for the profile pictures 
