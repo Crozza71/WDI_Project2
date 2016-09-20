@@ -1,3 +1,4 @@
+
 # ***The Quote Book***. 
 
 This was my second project at General Assembly.
@@ -46,4 +47,3 @@ So to the code......
 -  I used Ruby on Rails and jQuery with a PostgresSQL.
 -  This also includes Devise for my Password Authentication 
 -  Gems I used were Carrierwave and rMagick for the profile pictures 
-
