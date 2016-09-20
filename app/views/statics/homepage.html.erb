@@ -2,13 +2,13 @@
 
 
 <div class="homepage container">
-<div class="jumbotron col-xs-6 col-xs-offset-3">
+  <div class="jumbotron col-xs-6 col-xs-offset-3">
 
-  <h3>The</h3>
-  <h1>Quote</h1>
-  <h2>Book</h2>
+    <h3>The</h3>
+    <h1>Quote</h1>
+    <h2>Book</h2>
 
-</div>
+  </div>
 
 </div>
 
@@ -17,10 +17,16 @@
 
 
 <% if @rand_record %>
- <div class="quote-of-the-day">
-   <p><%= @rand_record.body %></p>
-   <%= image_tag @rand_record.culprit.profile_picture.url %>  
- </div>
- <% end %>
-  </div>
+  <ul class="card">
+    <div class="text">
+      <div class="speech-bubble">
+        <li><p><%= @rand_record.body %></p></li>
+      </div>
+      <div class="arrow-down"></div>
+      <li><%= image_tag @rand_record.culprit.profile_picture.url %></li>
+    </div>
+  </ul>
+<% end %>
+</div>
+
 
